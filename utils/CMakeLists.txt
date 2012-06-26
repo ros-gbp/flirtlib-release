@@ -5,4 +5,8 @@ SET(utils_SRCS
     PoseEstimation.cpp
 )
 
-ADD_LIBRARY(utils SHARED ${utils_SRCS})
+ADD_LIBRARY(flirtlib_utils SHARED ${utils_SRCS})
+INSTALL(TARGETS flirtlib_utils DESTINATION lib/)
+INSTALL(DIRECTORY . DESTINATION include/flirtlib/utils
+  FILES_MATCHING PATTERN "*.h"
+  PATTERN ".svn" EXCLUDE)

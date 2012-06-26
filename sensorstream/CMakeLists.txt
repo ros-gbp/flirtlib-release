@@ -4,8 +4,14 @@ SET(sensorstream_SRCS
 ) 
 
 SET(sensorstream_LIBS
-    sensors
+    flirtlib_sensors
 )
 
-ADD_LIBRARY(sensorstream SHARED ${sensorstream_SRCS})
-TARGET_LINK_LIBRARIES(sensorstream ${sensorstream_LIBS})
+ADD_LIBRARY(flirtlib_sensorstream SHARED ${sensorstream_SRCS})
+TARGET_LINK_LIBRARIES(flirtlib_sensorstream ${sensorstream_LIBS})
+INSTALL(TARGETS flirtlib_sensorstream DESTINATION lib/)
+INSTALL(DIRECTORY . DESTINATION include/flirtlib/sensorstream
+  FILES_MATCHING PATTERN "*.h"
+  PATTERN ".svn" EXCLUDE)
+
+

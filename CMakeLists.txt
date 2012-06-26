@@ -14,9 +14,9 @@ if(NOT CMAKE_BUILD_TYPE)
 endif(NOT CMAKE_BUILD_TYPE)
 
 # For out-of-source build in code structered with an src directory
-STRING(REGEX REPLACE "/src$" "/lib" CMAKE_LIBRARY_OUTPUT_DIRECTORY ${FLIRT_SOURCE_DIR})
-STRING(REGEX REPLACE "/src$" "/lib" CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${FLIRT_SOURCE_DIR})
-STRING(REGEX REPLACE "/src$" "/bin" CMAKE_RUNTIME_OUTPUT_DIRECTORY ${FLIRT_SOURCE_DIR})
+# STRING(REGEX REPLACE "/src$" "/lib" CMAKE_LIBRARY_OUTPUT_DIRECTORY ${FLIRT_SOURCE_DIR})
+# STRING(REGEX REPLACE "/src$" "/lib" CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${FLIRT_SOURCE_DIR})
+# STRING(REGEX REPLACE "/src$" "/bin" CMAKE_RUNTIME_OUTPUT_DIRECTORY ${FLIRT_SOURCE_DIR})
 
 # Set to build shared objects as option
 OPTION(BUILD_SHARED_LIBS "Build package with shared libraries." ON)
@@ -151,23 +151,23 @@ IF($ENV{OPTIMIZE})
         SET(OPTIMIZE 1 CACHE BOOL "Optimization flag")
 ENDIF($ENV{OPTIMIZE})
 
-IF(OPTIMIZE)
-        MESSAGE(STATUS "Optimization on")
-        ADD_DEFINITIONS(-O3)
-	ADD_DEFINITIONS(-march=native)
-	ADD_DEFINITIONS(-msse4.1)
-ENDIF(OPTIMIZE)
+# IF(OPTIMIZE)
+#         MESSAGE(STATUS "Optimization on")
+#         ADD_DEFINITIONS(-O3)
+# 	ADD_DEFINITIONS(-march=native)
+# 	ADD_DEFINITIONS(-msse4.1)
+# ENDIF(OPTIMIZE)
 
 # Debug
 IF(CMAKE_BUILD_TYPE MATCHES Debug OR CMAKE_BUILD_TYPE MATCHES RelWithDebInfo)
   SET(DEBUG 1)
 ENDIF(CMAKE_BUILD_TYPE MATCHES Debug OR CMAKE_BUILD_TYPE MATCHES RelWithDebInfo)
 
-IF(DEBUG)
-	ADD_DEFINITIONS(-g3)
-	ADD_DEFINITIONS(-ggdb3)
-	ADD_DEFINITIONS(-Wall)
-ENDIF(DEBUG)
+# IF(DEBUG)
+# 	ADD_DEFINITIONS(-g3)
+# 	ADD_DEFINITIONS(-ggdb3)
+# 	ADD_DEFINITIONS(-Wall)
+# ENDIF(DEBUG)
 
 #Profiling
 #ADD_DEFINITIONS(-pg)
@@ -184,3 +184,14 @@ ADD_SUBDIRECTORY(utils)
 IF(BUILD_GUI)
 	ADD_SUBDIRECTORY(gui)
 ENDIF(BUILD_GUI)
+
+
+if (NOT MSVC)
+  set(PKG_NAME "flirtlib")
+  set(PKG_DESC "FLIRTLib features")
+  set(PKG_FLIRTLIB_LIBS "-lflirtlib_sensor -lflirtlib_sensorstream -lflirtlib_geometry -lflirtlib_feature -lflirtlib_utils")
+  set(pkg_conf_file "${CMAKE_CURRENT_SOURCE_DIR}/flirtlib.pc")
+  configure_file("${pkg_conf_file}.in" "${pkg_conf_file}" @ONLY)
+  install(FILES ${pkg_conf_file} DESTINATION lib/pkgconfig/ COMPONENT pkgconfig)
+  
+endif()
