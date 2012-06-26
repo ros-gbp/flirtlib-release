@@ -1,6 +1,6 @@
 <stack>
   <name>flirtlib</name>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <description brief="Flirtlib library for 2d features from laser scans">
   Flirtlib library for 2d features from laser scans
   </description>
