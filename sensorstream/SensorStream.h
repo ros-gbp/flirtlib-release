@@ -23,7 +23,7 @@
 #ifndef SENSORSTREAM_H_
 #define SENSORSTREAM_H_
 
-#include <sensors/AbstractReading.h>
+#include "../sensors/AbstractReading.h"
 
 /** 
  * \enum SensorStreamOffset The offset from where to seek, values are END or BEGIN.

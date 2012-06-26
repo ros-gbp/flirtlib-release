@@ -23,13 +23,13 @@
 #ifndef CORRESPONDENCERENDERER_H_
 #define CORRESPONDENCERENDERER_H_
 
-#include <gui/AbstractRenderer.h>
+#include "../gui/AbstractRenderer.h"
 
-#include <geometry/point.h>
+#include "../geometry/point.h"
 #include <vector>
 #include <utility>
-#include <GL/gl.h>
-#include <GL/glu.h>
+#include "../GL/gl.h"
+#include "../GL/glu.h"
 #include <iostream>
 
 class CorrespondenceRenderer: public AbstractRenderer {

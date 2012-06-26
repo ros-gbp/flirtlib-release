@@ -23,10 +23,10 @@
 #ifndef BETAGRID_H_
 #define BETAGRID_H_
 
-#include <feature/Descriptor.h>
-#include <feature/InterestPoint.h>
-#include <sensors/LaserReading.h>
-#include <utils/HistogramDistances.h>
+#include "../feature/Descriptor.h"
+#include "../feature/InterestPoint.h"
+#include "../sensors/LaserReading.h"
+#include "../utils/HistogramDistances.h"
 #include <vector>
 
 /**

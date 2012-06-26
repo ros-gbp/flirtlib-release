@@ -23,8 +23,8 @@
 #ifndef ABSTRACTFEATURESETMATCHER_H_
 #define ABSTRACTFEATURESETMATCHER_H_
 
-#include <feature/InterestPoint.h>
-#include <geometry/point.h>
+#include "../feature/InterestPoint.h"
+#include "../geometry/point.h"
 #include <vector>
 #include <utility>
 

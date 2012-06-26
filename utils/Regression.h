@@ -24,7 +24,7 @@
 #define REGRESSION_H_
 
 #include <vector>
-#include <geometry/point.h>
+#include "../geometry/point.h"
 #include <cmath>
 
 /** 

@@ -23,9 +23,9 @@
 #ifndef SIMPLEPEAKFINDERPRESENTER_H_
 #define SIMPLEPEAKFINDERPRESENTER_H_
 
-#include <gui/PeakFinderPresenter.h>
-#include <gui/ParameterWidget.h>
-#include <utils/SimplePeakFinder.h>
+#include "../gui/PeakFinderPresenter.h"
+#include "../gui/ParameterWidget.h"
+#include "../utils/SimplePeakFinder.h"
 #include <QtGui/QWidget>
 #include <QtCore/QObject>
 

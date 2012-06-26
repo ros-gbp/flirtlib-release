@@ -23,12 +23,12 @@
 #ifndef POLARGRIDRENDERER_H_
 #define POLARGRIDRENDERER_H_
 
-#include <gui/AbstractRenderer.h>
+#include "../gui/AbstractRenderer.h"
 
-#include <geometry/point.h>
+#include "../geometry/point.h"
 #include <vector>
-#include <GL/gl.h>
-#include <GL/glu.h>
+#include "../GL/gl.h"
+#include "../GL/glu.h"
 #include <iostream>
 
 class PolarGridRenderer: public AbstractRenderer {

@@ -1,7 +1,7 @@
 #include "RendererWidget.h"
 #include "RendererWidget.moc"
 
-#include <geometry/point.h>
+#include "../geometry/point.h"
 
 static GLfloat LightAmb[] = { 0.3f, 0.3f, 0.3f, 1.0f }; // Ambient Light
 static GLfloat LightDif[] = { 0.6f, 0.6f, 0.6f, 1.0f }; // Diffuse Light

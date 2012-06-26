@@ -1,6 +1,6 @@
 #include "CurvatureDetector.h"
 
-#include <utils/Regression.h>
+#include "../utils/Regression.h"
 
 CurvatureDetector::CurvatureDetector(const PeakFinder* peak, unsigned int scales, double sigma, double step, unsigned int dmst):
     m_peakFinder(peak),

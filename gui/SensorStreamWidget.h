@@ -23,7 +23,7 @@
 #ifndef SENSORSTREAMWIDGET_H_
 #define SENSORSTREAMWIDGET_H_
 
-#include <sensorstream/SensorStream.h>
+#include "../sensorstream/SensorStream.h"
 
 #include <QtGui/QGridLayout>
 #include <QtGui/QPushButton>

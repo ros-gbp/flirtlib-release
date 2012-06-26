@@ -23,10 +23,10 @@
 #ifndef MULTISCALECURVATUREDETECTORPRESENTER_H_
 #define MULTISCALECURVATUREDETECTORPRESENTER_H_
 
-#include <gui/PeakFinderPresenter.h>
-#include <gui/DetectorPresenter.h>
-#include <gui/ParameterWidget.h>
-#include <feature/CurvatureDetector.h>
+#include "../gui/PeakFinderPresenter.h"
+#include "../gui/DetectorPresenter.h"
+#include "../gui/ParameterWidget.h"
+#include "../feature/CurvatureDetector.h"
 #include <QtCore/QVector>
 #include <QtCore/QObject>
 #include <QtCore/QString>

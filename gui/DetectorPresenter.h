@@ -23,8 +23,8 @@
 #ifndef DETECTORPRESENTER_H_
 #define DETECTORPRESENTER_H_
 
-#include <feature/Detector.h>
-#include <gui/ParameterWidget.h>
+#include "../feature/Detector.h"
+#include "../gui/ParameterWidget.h"
 #include <QtGui/QWidget>
 #include <QtCore/QObject>
 

@@ -23,8 +23,8 @@
 #ifndef INTERESTPOINT_H_
 #define INTERESTPOINT_H_
 
-#include <geometry/point.h>
-#include <feature/Descriptor.h>
+#include "../geometry/point.h"
+#include "../feature/Descriptor.h"
 #include <vector>
 
 /**

@@ -23,11 +23,11 @@
 #ifndef CARMENLOG_H_
 #define CARMENLOG_H_
 
-#include <sensorstream/LogReader.h>
-#include <sensorstream/LogWriter.h>
-#include <sensors/AbstractReading.h>
-#include <sensors/LaserReading.h>
-#include <geometry/point.h>
+#include "../sensorstream/LogReader.h"
+#include "../sensorstream/LogWriter.h"
+#include "../sensors/AbstractReading.h"
+#include "../sensors/LaserReading.h"
+#include "../geometry/point.h"
 
 #include <iostream>
 #include <sstream>

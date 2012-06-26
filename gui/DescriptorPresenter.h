@@ -23,10 +23,10 @@
 #ifndef DESCRIPTORPRESENTER_H_
 #define DESCRIPTORPRESENTER_H_
 
-#include <feature/Descriptor.h>
+#include "../feature/Descriptor.h"
 #include <QtGui/QWidget>
 #include <QtCore/QObject>
-#include <gui/ParameterWidget.h>
+#include "../gui/ParameterWidget.h"
 
 class DescriptorPresenter: public QObject{
     public:

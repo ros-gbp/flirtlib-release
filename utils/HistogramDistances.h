@@ -134,6 +134,6 @@ class JensenShannonDistance: public HistogramDistance<Numeric>{
 	virtual double distance(const std::vector<Numeric>& first, const std::vector<Numeric>& last) const;
 };
 
-#include <utils/HistogramDistances.hpp>
+#include "../utils/HistogramDistances.hpp"
 
 #endif

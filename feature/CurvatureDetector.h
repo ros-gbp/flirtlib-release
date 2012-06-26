@@ -23,10 +23,10 @@
 #ifndef CURVATUREDETECTOR_H_
 #define CURVATUREDETECTOR_H_
 
-#include <feature/InterestPoint.h>
-#include <feature/Detector.h>
-#include <utils/Convolution.h>
-#include <utils/PeakFinder.h>
+#include "../feature/InterestPoint.h"
+#include "../feature/Detector.h"
+#include "../utils/Convolution.h"
+#include "../utils/PeakFinder.h"
 #include <boost/graph/adjacency_matrix.hpp>
 #include <boost/graph/adjacency_list.hpp>
 #include <boost/graph/prim_minimum_spanning_tree.hpp>

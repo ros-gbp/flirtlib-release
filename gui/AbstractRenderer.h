@@ -25,7 +25,7 @@
 
 #include <GL/gl.h>
 #include <GL/glu.h>
-#include <gui/Color.h>
+#include "../gui/Color.h"
 
 class AbstractRenderer {
     public:

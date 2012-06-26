@@ -23,7 +23,7 @@
 #ifndef NORMALEDGEDETECTOR_H_
 #define NORMALEDGEDETECTOR_H_
 
-#include <feature/NormalDetector.h>
+#include "../feature/NormalDetector.h"
 
 /**
  * Representation of the normal edge detector.

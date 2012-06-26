@@ -23,10 +23,10 @@
 #ifndef FEATURESETMATCHERPRESENTER_H_
 #define FEATURESETMATCHERPRESENTER_H_
 
-#include <feature/AbstractFeatureSetMatcher.h>
+#include "../feature/AbstractFeatureSetMatcher.h"
 #include <QtGui/QWidget>
 #include <QtCore/QObject>
-#include <gui/ParameterWidget.h>
+#include "../gui/ParameterWidget.h"
 
 class FeatureSetMatcherPresenter: public QObject{
     Q_OBJECT

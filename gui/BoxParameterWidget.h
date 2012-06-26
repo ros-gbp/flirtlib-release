@@ -24,7 +24,7 @@
 #define BOXPARAMETERWIDGET_H_
 
 #include <QtGui/QGroupBox>
-#include <gui/ParameterWidget.h>
+#include "../gui/ParameterWidget.h"
 
 class BoxParameterWidget: public ParameterWidget {
     public:

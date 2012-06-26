@@ -23,8 +23,8 @@
 #ifndef RANSACMULTIFEATURESETMATCHER_H_
 #define RANSACMULTIFEATURESETMATCHER_H_
 
-#include <feature/RansacFeatureSetMatcher.h>
-#include <utils/PoseEstimation.h>
+#include "../feature/RansacFeatureSetMatcher.h"
+#include "../utils/PoseEstimation.h"
 #include <vector>
 #include <utility>
 

@@ -23,11 +23,11 @@
 #ifndef RANGEDETECTOR_H_
 #define RANGEDETECTOR_H_
 
-#include <feature/InterestPoint.h>
-#include <feature/Detector.h>
-#include <feature/MultiScaleDetector.h>
-#include <utils/Convolution.h>
-#include <utils/PeakFinder.h>
+#include "../feature/InterestPoint.h"
+#include "../feature/Detector.h"
+#include "../feature/MultiScaleDetector.h"
+#include "../utils/Convolution.h"
+#include "../utils/PeakFinder.h"
 
 #include <vector>
 

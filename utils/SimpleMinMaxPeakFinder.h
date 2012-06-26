@@ -23,7 +23,7 @@
 #ifndef SIMPLEMINMAXPEAKFINDER_H_
 #define SIMPLEMINMAXPEAKFINDER_H_
 
-#include <utils/SimplePeakFinder.h>
+#include "../utils/SimplePeakFinder.h"
 #include <vector>
 
 /**

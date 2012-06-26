@@ -23,7 +23,7 @@
 #ifndef LOGREADER_H_
 #define LOGREADER_H_
 
-#include <sensors/AbstractReading.h>
+#include "../sensors/AbstractReading.h"
 
 #include <iostream>
 #include <vector>

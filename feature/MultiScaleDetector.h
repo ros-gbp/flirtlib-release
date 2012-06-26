@@ -23,10 +23,10 @@
 #ifndef MULTISCALEDETECTOR_H_
 #define MULTISCALEDETECTOR_H_
 
-#include <feature/InterestPoint.h>
-#include <feature/Detector.h>
-#include <utils/Convolution.h>
-#include <utils/PeakFinder.h>
+#include "../feature/InterestPoint.h"
+#include "../feature/Detector.h"
+#include "../utils/Convolution.h"
+#include "../utils/PeakFinder.h"
 
 #include <vector>
 
