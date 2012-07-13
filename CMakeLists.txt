@@ -45,6 +45,10 @@ ELSEIF(WIN32)
 	ENDIF(CYGWIN)
 ENDIF("${CMAKE_SYSTEM}" MATCHES "Linux")
 
+# ROS/catkin
+find_package(catkin REQUIRED)
+catkin_stack()
+
 # Library: Boost
 set(Boost_USE_MULTITHREADED ON)
 FIND_PACKAGE(Boost 1.36.0 COMPONENTS program_options)
