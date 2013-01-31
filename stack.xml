@@ -1,0 +1,23 @@
+<stack>
+  <name>flirtlib</name>
+  <version>0.1.5</version>
+  <description brief="Flirtlib library for 2d features from laser scans">
+  Flirtlib library for 2d features from laser scans
+  </description>
+  <author email="tipaldi@somewhere.com">Gian Diego Tipaldi</author>
+  <maintainer email="bhaskara@willowgarage.com">Bhaskara Marthi</maintainer>
+
+  <license>BSD</license>  
+  <copyright>Gian Diego Tipaldi</copyright>
+  <url>http://www.informatik.uni-freiburg.de/~tipaldi/homepage.html</url>
+  
+  <review status="unreviewed" notes=""/>
+
+  <build_depends>catkin</build_depends>
+  <build_depends>cmake</build_depends>
+  <build_depends>boost</build_depends>
+  
+  <depends>boost</depends> 
+  
+
+</stack>
