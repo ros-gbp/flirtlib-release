@@ -1,0 +1,12 @@
+Source: ros-fuerte-flirtlib
+Section: misc
+Priority: extra
+Maintainer: Bhaskara Marthi <bhaskara@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), cmake,libboost1.46-all-dev,ros-fuerte-catkin
+Homepage: http://www.informatik.uni-freiburg.de/~tipaldi/homepage.html
+Standards-Version: 3.9.2
+
+Package: ros-fuerte-flirtlib
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost1.46-all-dev
+Description: Flirtlib library for 2d features from laser scans
